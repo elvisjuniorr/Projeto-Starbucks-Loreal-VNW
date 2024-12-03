@@ -1,0 +1,29 @@
+
+/* html {
+    display: flex;
+    justify-content: center;
+} */
+
+header {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 15rem;
+}
+
+section {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 3rem;
+}
+
+.link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #1E3932;
+    text-decoration: none;
+}

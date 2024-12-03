@@ -1,0 +1,57 @@
+
+home {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+} 
+
+.ladoEsquerdo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    /* margin-left: 5%; */
+    height: 100vh;
+    width: 60%;
+    padding-left: 5%;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.exemploBebidaPequena {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.exemploBebidaPequena > button > img {
+    width: 6.813rem;
+}
+
+.ladoDireito {
+    width: 40%;
+    display: flex;
+    justify-content: end;  
+    align-items: end;
+}
+
+.exemploBebidaGrande{
+    position: relative;
+    z-index: 2;
+}
+
+.esfera {
+    position: relative;
+    z-index: 1;
+    background-color: #037143;
+    width: 100vh;
+    height: 50vh;
+    margin-top: -50px;
+}
