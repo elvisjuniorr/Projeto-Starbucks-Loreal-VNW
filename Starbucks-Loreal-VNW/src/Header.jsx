@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
 
 function Header() {
     return (
         <header>
-            <img src="src/assets/logo.svg" />
+            <img src="public/logo.svg" />
             <section className='links'>
                 <Link className='link' to="/">Home</Link>
                 <Link className='link' to="/novidades">Novidades</Link>

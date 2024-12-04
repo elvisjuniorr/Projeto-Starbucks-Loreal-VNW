@@ -1,10 +1,9 @@
-import { useState } from 'react'
 import './Sobre.css'
 
 function Sobre() {
   return (
     <sobre>
-      <img src="src/assets/imagemLoja.svg"/>
+      <img src="public/imagemLoja.svg"/>
       <section className='textosDireita'>
         <p>PREPARAÇÃO</p>
         <p>Níveis de torra</p>

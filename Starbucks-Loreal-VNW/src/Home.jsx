@@ -29,27 +29,27 @@ function Home() {
           <button className='botaoVerde'>SAIBA MAIS</button>
         </section>
         <section className='exemploBebidaPequena'>
-          <button onClick={ () => definirImagemCopo("laranja")}><img src="src/assets/laranjaMenor.svg"/></button>
-          <button onClick={ () => definirImagemCopo("vermelho")}><img src="src/assets/vermelhoMenor.svg"/></button>
-          <button onClick={ () => definirImagemCopo("amarelo")}><img src="src/assets/amareloMenor.svg"/></button>
+          <button onClick={ () => definirImagemCopo("laranja")}><img src="public/laranjaMenor.svg"/></button>
+          <button onClick={ () => definirImagemCopo("vermelho")}><img src="public/vermelhoMenor.svg"/></button>
+          <button onClick={ () => definirImagemCopo("amarelo")}><img src="public/amareloMenor.svg"/></button>
         </section>
       </section>
       {imagemCopo == "laranja" && (
         <section className='ladoDireito' >
-          <img className="exemploBebidaGrande" src="src/assets/laranjaMaior.svg" />
-          <img className="esfera" src="src/assets/eclipseVerde.svg" />
+          <img className="exemploBebidaGrande" src="public/laranjaMaior.svg" />
+          <img className="esfera" src="public/eclipseVerde.svg" />
         </section>
       )}
       {imagemCopo == "vermelho" && (
         <section className='ladoDireito' >
-          <img className="exemploBebidaGrande" src="src/assets/vermelhoMaior.svg" />
-          <img className="esfera" src="src/assets/eclipseVermelho.svg" />
+          <img className="exemploBebidaGrande" src="public/vermelhoMaior.svg" />
+          <img className="esfera" src="public/eclipseVermelho.svg" />
         </section>
       )}
       {imagemCopo == "amarelo" && (
         <section className='ladoDireito' >
-          <img className="exemploBebidaGrande" src="src/assets/amareloMaior.svg" />
-          <img className="esfera" src="src/assets/eclipseAmarelo.svg" />
+          <img className="exemploBebidaGrande" src="public/amareloMaior.svg" />
+          <img className="esfera" src="public/eclipseAmarelo.svg" />
         </section>
       )}
     </home>
