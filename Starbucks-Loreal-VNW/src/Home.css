@@ -1,9 +1,11 @@
 
+
 home {
     display: flex;
     height: 100vh;
     width: 100%;
     justify-content: space-between;
+    padding-left: 5%;
 } 
 
 .ladoEsquerdo {
@@ -11,10 +13,8 @@ home {
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    /* margin-left: 5%; */
-    height: 100vh;
+    height: 100%;
     width: 60%;
-    padding-left: 5%;
 }
 
 .informacoes {
@@ -22,6 +22,57 @@ home {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    width: 100%;
+}
+
+.informacoes > p {
+    text-align: justify;
+}
+
+.informacoes > p:first-of-type {
+    font-size: 4rem;
+    font-weight: 400;
+    width: 100%;
+    height:fit-content;
+    font-family: 'poppins';
+}
+
+.informacoes > p:nth-of-type(2) {
+    font-size: 4rem;
+    font-weight: 400;
+    width: 100%;
+    height: fit-content;
+    font-family: 'poppins';
+}
+
+.informacoes > p:nth-of-type(2) > span{
+    font-size: 6rem;
+    font-weight: 700;
+    color: #037143;
+    font-family: 'poppins';
+    
+}
+
+.informacoes > p:last-of-type {
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 100%;
+    font-family: 'poppins';
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.botaoVerde {
+    background-color: #037143;
+    color: white;
+    text-align: center;
+    width: 18.313rem;
+    height: 4rem;
+    border-radius: 1.875rem;
+    font-size: 1.5rem;
+    border: none;
+    font-weight: 700;
+    font-family: 'inter';
 }
 
 .exemploBebidaPequena {
@@ -31,27 +82,36 @@ home {
     gap: 2rem;
 }
 
+.exemploBebidaPequena > button {
+    border: none;
+    background-color:transparent;
+    width: 6.813rem;
+}
+
 .exemploBebidaPequena > button > img {
     width: 6.813rem;
 }
 
+.exemploBebidaPequena > button > img:hover {
+    transform: translateY(-1rem) rotate(-10deg);
+}
+
+
+
 .ladoDireito {
     width: 40%;
+    height: 100%;
     display: flex;
-    justify-content: end;  
+    justify-content: center;  
     align-items: end;
 }
 
-.exemploBebidaGrande{
-    position: relative;
+.exemploBebidaGrande {
+    max-width: 100%;
+    position: absolute;
     z-index: 2;
 }
 
 .esfera {
-    position: relative;
-    z-index: 1;
-    background-color: #037143;
-    width: 100vh;
-    height: 50vh;
-    margin-top: -50px;
+    width:100vh;
 }

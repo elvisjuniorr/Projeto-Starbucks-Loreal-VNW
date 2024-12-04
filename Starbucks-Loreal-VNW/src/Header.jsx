@@ -6,7 +6,7 @@ function Header() {
     return (
         <header>
             <img src="src/assets/logo.svg" />
-            <section>
+            <section className='links'>
                 <Link className='link' to="/">Home</Link>
                 <Link className='link' to="/novidades">Novidades</Link>
                 <Link className='link' to="/sobre">Sobre</Link>

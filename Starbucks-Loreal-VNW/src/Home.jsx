@@ -2,26 +2,56 @@ import { useState } from 'react'
 import './Home.css'
 
 function Home() {
+
+  const [imagemCopo,setImagemCopo] = useState ("laranja");
+
+  function definirImagemCopo(cor) {
+    switch (cor) {
+      case 'laranja':
+        setImagemCopo ('laranja');
+        return;
+      case 'vermelho':
+        setImagemCopo ('vermelho');
+        return;
+      case 'amarelo':
+        setImagemCopo ('amarelo');
+        return;
+    }
+  }
+
   return (
     <home>
       <section className='ladoEsquerdo'>
         <section className='informacoes'>
-          <h1>Mais que Café</h1>
-          <h1>Isso é <span>Starbucks</span></h1>
+          <p>Mais que Café</p>
+          <p>Isso é <span>Starbucks</span></p>
           <p>A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.</p>
-          <button>SAIBA MAIS</button>
+          <button className='botaoVerde'>SAIBA MAIS</button>
         </section>
         <section className='exemploBebidaPequena'>
-          <button><img src="src/assets/laranjaMenor.svg"/></button>
-          <button><img src="src/assets/vermelhoMenor.svg"/></button>
-          <button><img src="src/assets/amareloMenor.svg"/></button>
+          <button onClick={ () => definirImagemCopo("laranja")}><img src="src/assets/laranjaMenor.svg"/></button>
+          <button onClick={ () => definirImagemCopo("vermelho")}><img src="src/assets/vermelhoMenor.svg"/></button>
+          <button onClick={ () => definirImagemCopo("amarelo")}><img src="src/assets/amareloMenor.svg"/></button>
         </section>
       </section>
-      <section className='ladoDireito' >
-        <img className='exemploBebidaGrande' src="src/assets/laranjaMaior.svg"/>
-        <div className='esfera'></div>
-      </section>
-
+      {imagemCopo == "laranja" && (
+        <section className='ladoDireito' >
+          <img className="exemploBebidaGrande" src="src/assets/laranjaMaior.svg" />
+          <img className="esfera" src="src/assets/eclipseVerde.svg" />
+        </section>
+      )}
+      {imagemCopo == "vermelho" && (
+        <section className='ladoDireito' >
+          <img className="exemploBebidaGrande" src="src/assets/vermelhoMaior.svg" />
+          <img className="esfera" src="src/assets/eclipseVermelho.svg" />
+        </section>
+      )}
+      {imagemCopo == "amarelo" && (
+        <section className='ladoDireito' >
+          <img className="exemploBebidaGrande" src="src/assets/amareloMaior.svg" />
+          <img className="esfera" src="src/assets/eclipseAmarelo.svg" />
+        </section>
+      )}
     </home>
   )
 }
