@@ -17,7 +17,6 @@ novidades {
 
 .textosEsquerda > p {
     color: white;
-    text-align: justify;
 }
 
 .textosEsquerda > p:first-of-type {
@@ -36,8 +35,28 @@ novidades {
     font-weight: 400;
     font-size: 1.5rem;
     font-family: 'Poppins';
+    text-align: justify;
 }
 
 novidades > img {
     width: 32.875rem;
+}
+
+@media (max-width: 1300px) {
+
+    novidades {
+        flex-direction: column;
+        justify-content:space-evenly;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        gap: 3rem;
+    }
+
+    .textosEsquerda {
+        width: 20rem;
+    }
+
+    novidades > img {
+        width: 20rem;
+    }
 }

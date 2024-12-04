@@ -54,3 +54,24 @@ sobre > img {
     font-weight: 700;
     font-family: 'inter';
 }
+
+@media (max-width: 1100px) {
+
+    sobre {
+        flex-direction: column;
+        justify-content:space-evenly;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        gap: 3rem;
+    }
+
+    sobre > img {
+        width: 20rem;
+    }
+
+
+    .textosDireita {
+        width: 20rem;
+    }
+}
+    

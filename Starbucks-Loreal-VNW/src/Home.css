@@ -3,9 +3,8 @@
 home {
     display: flex;
     height: 100vh;
-    width: 100%;
-    justify-content: space-between;
     padding-left: 5%;
+    align-items: end;
 } 
 
 .ladoEsquerdo {
@@ -23,10 +22,6 @@ home {
     justify-content: center;
     align-items: start;
     width: 100%;
-}
-
-.informacoes > p {
-    text-align: justify;
 }
 
 .informacoes > p:first-of-type {
@@ -60,6 +55,7 @@ home {
     font-family: 'poppins';
     margin-top: 2rem;
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
 .botaoVerde {
@@ -79,7 +75,8 @@ home {
     width: 100%;
     display: flex;
     justify-content: end;
-    gap: 2rem;
+    margin-top: 1rem;
+    gap: 2.5rem;
 }
 
 .exemploBebidaPequena > button {
@@ -97,21 +94,61 @@ home {
 }
 
 
-
 .ladoDireito {
     width: 40%;
     height: 100%;
     display: flex;
-    justify-content: center;  
+    justify-content: end;  
     align-items: end;
 }
 
 .exemploBebidaGrande {
-    max-width: 100%;
+    width: 30%;
     position: absolute;
-    z-index: 2;
+    padding-bottom: 4rem;
 }
 
 .esfera {
-    width:100vh;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    home {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0%;
+    }
+
+    .informacoes {
+        align-items: center;
+    }
+
+    .informacoes > p:nth-of-type(2) > span{
+        font-size: 3rem;
+        
+    }
+
+    .exemploBebidaPequena {
+        justify-content: center;
+        gap: 1rem
+    }
+
+    .ladoDireito {
+        width: 100%;
+        display: flex;
+        justify-content: end;  
+        align-items: end;
+    }
+
+    .exemploBebidaGrande {
+        height: 80vw;
+        width: auto;
+        position: absolute;
+        padding-bottom: 4rem;
+    }
+
+    .esfera {
+        width: 100%;
+        margin-top: 4rem;
+    }
 }
