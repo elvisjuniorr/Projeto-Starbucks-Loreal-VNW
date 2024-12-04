@@ -29,27 +29,27 @@ function Home() {
           <button className='botaoVerde'>SAIBA MAIS</button>
         </section>
         <section className='exemploBebidaPequena'>
-          <button onClick={ () => definirImagemCopo("laranja")}><img src="public/laranjaMenor.svg"/></button>
-          <button onClick={ () => definirImagemCopo("vermelho")}><img src="public/vermelhoMenor.svg"/></button>
-          <button onClick={ () => definirImagemCopo("amarelo")}><img src="public/amareloMenor.svg"/></button>
+          <button onClick={ () => definirImagemCopo("laranja")}><img src="/laranjaMenor.svg"/></button>
+          <button onClick={ () => definirImagemCopo("vermelho")}><img src="/vermelhoMenor.svg"/></button>
+          <button onClick={ () => definirImagemCopo("amarelo")}><img src="/amareloMenor.svg"/></button>
         </section>
       </section>
       {imagemCopo == "laranja" && (
         <section className='ladoDireito' >
-          <img className="exemploBebidaGrande" src="public/laranjaMaior.svg" />
-          <img className="esfera" src="public/eclipseVerde.svg" />
+          <img className="exemploBebidaGrande" src="/laranjaMaior.svg" />
+          <img className="esfera" src="/eclipseVerde.svg" />
         </section>
       )}
       {imagemCopo == "vermelho" && (
         <section className='ladoDireito' >
-          <img className="exemploBebidaGrande" src="public/vermelhoMaior.svg" />
-          <img className="esfera" src="public/eclipseVermelho.svg" />
+          <img className="exemploBebidaGrande" src="/vermelhoMaior.svg" />
+          <img className="esfera" src="/eclipseVermelho.svg" />
         </section>
       )}
       {imagemCopo == "amarelo" && (
         <section className='ladoDireito' >
-          <img className="exemploBebidaGrande" src="public/amareloMaior.svg" />
-          <img className="esfera" src="public/eclipseAmarelo.svg" />
+          <img className="exemploBebidaGrande" src="/amareloMaior.svg" />
+          <img className="esfera" src="/eclipseAmarelo.svg" />
         </section>
       )}
     </home>

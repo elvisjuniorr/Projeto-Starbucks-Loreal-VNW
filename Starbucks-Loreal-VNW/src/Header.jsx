@@ -4,7 +4,7 @@ import './Header.css'
 function Header() {
     return (
         <header>
-            <img src="public/logo.svg" />
+            <img src="/logo.svg" />
             <section className='links'>
                 <Link className='link' to="/">Home</Link>
                 <Link className='link' to="/novidades">Novidades</Link>

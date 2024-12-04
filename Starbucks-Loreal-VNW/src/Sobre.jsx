@@ -3,7 +3,7 @@ import './Sobre.css'
 function Sobre() {
   return (
     <sobre>
-      <img src="public/imagemLoja.svg"/>
+      <img src="/imagemLoja.svg"/>
       <section className='textosDireita'>
         <p>PREPARAÇÃO</p>
         <p>Níveis de torra</p>
