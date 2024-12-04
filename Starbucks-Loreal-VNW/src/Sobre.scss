@@ -1,0 +1,77 @@
+sobre {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+sobre > img {
+    width: 23.25rem;
+}
+
+.textosDireita {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 39.625rem;
+}
+
+.textosDireita > p {
+    color: #1E3932;
+    text-align: justify;
+}
+
+.textosDireita > p:first-of-type {
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Inter';
+}
+
+.textosDireita > p:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 4rem;
+    font-family: 'Poppins';
+}
+
+.textosDireita > p:last-of-type {
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+}
+
+.botaoVerde {
+    background-color: #037143;
+    color: white;
+    text-align: center;
+    width: 18.313rem;
+    height: 4rem;
+    border-radius: 1.875rem;
+    font-size: 1.5rem;
+    border: none;
+    font-weight: 700;
+    font-family: 'inter';
+}
+
+@media (max-width: 1100px) {
+
+    sobre {
+        flex-direction: column;
+        justify-content:space-evenly;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        gap: 3rem;
+    }
+
+    sobre > img {
+        width: 20rem;
+    }
+
+
+    .textosDireita {
+        width: 20rem;
+    }
+}
+    

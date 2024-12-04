@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,72 +13,79 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  display: block;
 }
 
-header {  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;  
-    padding-left: 5%;
-    padding-right: 5%;
-    height: 15rem;
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 15rem;
 }
 
 .links {
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    gap: 3rem;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  gap: 3rem;
 }
 
 .link {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #1E3932;
-    text-decoration: none;
-    font-family: 'poppins';
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #1E3932;
+  text-decoration: none;
+  font-family: "poppins";
 }
 
 @media (max-width: 600px) {
-    header {  
-        flex-direction: column;
-        align-items: center;  
-        justify-content: space-evenly;
-        height: 20rem;
-    }
-
-    .links {
-        justify-content: center;
-        gap: 1.5rem;
-    }
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20rem;
+  }
+  .links {
+    justify-content: center;
+    gap: 1.5rem;
+  }
 }
+
+/*# sourceMappingURL=Header.css.map */

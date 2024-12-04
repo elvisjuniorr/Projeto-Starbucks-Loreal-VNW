@@ -1,154 +1,148 @@
-
-
 home {
-    display: flex;
-    height: 100vh;
-    padding-left: 5%;
-    align-items: end;
-} 
+  display: flex;
+  height: 100vh;
+  padding-left: 5%;
+  align-items: end;
+}
 
 .ladoEsquerdo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    height: 100%;
-    width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+  width: 60%;
 }
 
 .informacoes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
 }
 
 .informacoes > p:first-of-type {
-    font-size: 4rem;
-    font-weight: 400;
-    width: 100%;
-    height:fit-content;
-    font-family: 'poppins';
+  font-size: 4rem;
+  font-weight: 400;
+  width: 100%;
+  height: fit-content;
+  font-family: "poppins";
 }
 
 .informacoes > p:nth-of-type(2) {
-    font-size: 4rem;
-    font-weight: 400;
-    width: 100%;
-    height: fit-content;
-    font-family: 'poppins';
+  font-size: 4rem;
+  font-weight: 400;
+  width: 100%;
+  height: fit-content;
+  font-family: "poppins";
 }
 
-.informacoes > p:nth-of-type(2) > span{
-    font-size: 6rem;
-    font-weight: 700;
-    color: #037143;
-    font-family: 'poppins';
-    
+.informacoes > p:nth-of-type(2) > span {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #037143;
+  font-family: "poppins";
 }
 
 .informacoes > p:last-of-type {
-    font-weight: 400;
-    font-size: 1.5rem;
-    width: 100%;
-    font-family: 'poppins';
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: justify;
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 100%;
+  font-family: "poppins";
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .botaoVerde {
-    background-color: #037143;
-    color: white;
-    text-align: center;
-    width: 18.313rem;
-    height: 4rem;
-    border-radius: 1.875rem;
-    font-size: 1.5rem;
-    border: none;
-    font-weight: 700;
-    font-family: 'inter';
+  background-color: #037143;
+  color: white;
+  text-align: center;
+  width: 18.313rem;
+  height: 4rem;
+  border-radius: 1.875rem;
+  font-size: 1.5rem;
+  border: none;
+  font-weight: 700;
+  font-family: "inter";
 }
 
 .exemploBebidaPequena {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    margin-top: 1rem;
-    gap: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+  gap: 2.5rem;
 }
 
 .exemploBebidaPequena > button {
-    border: none;
-    background-color:transparent;
-    width: 6.813rem;
+  border: none;
+  background-color: transparent;
+  width: 6.813rem;
 }
 
 .exemploBebidaPequena > button > img {
-    width: 6.813rem;
+  width: 6.813rem;
 }
 
 .exemploBebidaPequena > button > img:hover {
-    transform: translateY(-1rem) rotate(-10deg);
+  transform: translateY(-1rem) rotate(-10deg);
 }
 
-
 .ladoDireito {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: end;  
-    align-items: end;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
 
 .exemploBebidaGrande {
-    width: 30%;
-    position: absolute;
-    padding-bottom: 4rem;
+  width: 30%;
+  position: absolute;
+  padding-bottom: 4rem;
 }
 
 .esfera {
-    width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
-    home {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0%;
-    }
-
-    .informacoes {
-        align-items: center;
-    }
-
-    .informacoes > p:nth-of-type(2) > span{
-        font-size: 3rem;
-        
-    }
-
-    .exemploBebidaPequena {
-        justify-content: center;
-        gap: 1rem
-    }
-
-    .ladoDireito {
-        width: 100%;
-        display: flex;
-        justify-content: end;  
-        align-items: end;
-    }
-
-    .exemploBebidaGrande {
-        height: 80vw;
-        width: auto;
-        position: absolute;
-        padding-bottom: 4rem;
-    }
-
-    .esfera {
-        width: 100%;
-        margin-top: 4rem;
-    }
+  home {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .ladoEsquerdo {
+    height: auto;
+  }
+  .informacoes {
+    align-items: center;
+  }
+  .informacoes > p:nth-of-type(2) > span {
+    font-size: 3rem;
+  }
+  .exemploBebidaPequena {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .ladoDireito {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .exemploBebidaGrande {
+    height: 80vw;
+    width: auto;
+    position: absolute;
+    padding-bottom: 4rem;
+  }
+  .esfera {
+    width: 100%;
+  }
 }
+
+/*# sourceMappingURL=Home.css.map */
